@@ -1,0 +1,6 @@
+{% import "_query_table.html" as querytable with context %}
+
+<i>Plac Budget (work in progress):</i>
+
+{% set table = extension.table() %}
+{{ querytable.querytable(None, table[0], table[1]) }}
